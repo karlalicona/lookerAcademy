@@ -36,7 +36,7 @@ view: orders {
     drill_fields: [order_id, users.last_name, users.id, users.first_name, order_items.count]
   }
   measure: items_ordered {
-    type: max
+    type: sum
     sql: ${num_of_item} ;;
   }
 }
