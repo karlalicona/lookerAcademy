@@ -60,9 +60,10 @@ view: users {
     sql: ${TABLE}.postal_code ;;
   }
   dimension: state {
-    type: string
+    map_layer_name: us_states
     sql: ${TABLE}.state ;;
   }
+
   dimension: street_address {
     type: string
     sql: ${TABLE}.street_address ;;
